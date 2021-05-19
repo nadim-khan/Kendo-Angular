@@ -1,0 +1,37 @@
+<kendo-appbar>
+
+  <kendo-appbar-section>
+    <button class="k-button k-button-clear">
+      <kendo-icon name="menu"></kendo-icon>
+    </button>
+  </kendo-appbar-section>
+
+  <kendo-appbar-section>
+    <h1 class="title">Kendo-Angular-Nadeem</h1>
+</kendo-appbar-section>
+
+<kendo-appbar-spacer [width]="'32px'"></kendo-appbar-spacer>
+
+<kendo-appbar-section>
+  <ul>
+      <li><a routerLink="/products" routerlinkActive="active">Products</a></li>
+      <li><a routerLink="/users" routerlinkActive="active">Users</a></li>
+      <li><a routerLink="/posts" routerlinkActive="active">Posts</a></li>
+  </ul>
+</kendo-appbar-section>
+
+<kendo-appbar-spacer></kendo-appbar-spacer>
+
+<!-- <kendo-appbar-section class="actions">
+  <kendo-badge-container>
+      <button class="k-button k-button-clear">
+          <kendo-icon name="bell"></kendo-icon>
+      </button>
+  </kendo-badge-container>
+  <span class="k-appbar-separator"></span>
+</kendo-appbar-section> -->
+
+<kendo-appbar-section>
+  <kendo-avatar [imageSrc]="kendokaAvatar" shape="circle" width="26px" height="26px"></kendo-avatar>
+</kendo-appbar-section>
+</kendo-appbar>

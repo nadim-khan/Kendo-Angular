@@ -1,0 +1,28 @@
+
+<app-loader *ngIf="!usersList.length" ></app-loader>
+<kendo-listview
+  [data]="pagedDestinations"
+  [containerClass]="'k-d-flex k-flex-col k-flex-nowrap'"
+>
+  <ng-template kendoListViewHeaderTemplate>
+    <div class="header">Users list</div>
+  </ng-template>
+  <ng-template
+    kendoListViewItemTemplate
+    let-dataItem="dataItem"
+    let-isFirst="isFirst"
+  >
+    <div class="user-details">
+      <div class="user-name">{{ dataItem.name }}</div>
+      <div class="user-email">{{ dataItem.email }}</div>
+    </div>
+  </ng-template>
+</kendo-listview>
+<kendo-datapager
+        [style.width.%]="100"
+        [pageSize]="pageSize"
+        [skip]="skip"
+        [total]="total"
+        (pageChange)="onPageChange($event)"
+      >
+      </kendo-datapager>

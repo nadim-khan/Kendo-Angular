@@ -1,0 +1,16 @@
+
+.user-details {
+  flex:1;
+  margin:5px;
+}
+.user-name {
+  color: #656565;
+  font-weight: bolder;
+}
+.user-email {
+  font-size: 0.7rem;
+  color: #bebebe;
+  display: block;
+}
+
+

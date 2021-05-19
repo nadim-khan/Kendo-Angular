@@ -1,0 +1,12 @@
+.k-i-loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 64px;
+  background-color: rgba(51, 45, 45, 0.164);
+  color: #ff6757;
+  z-index: 9999;
+  animation: glow 1s ease-in-out infinite alternate;
+}

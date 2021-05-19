@@ -1,0 +1,18 @@
+
+<app-loader *ngIf="!products.length" ></app-loader>
+<div *ngFor="let product of products">
+  <div class="k-hbox">
+    <kendo-avatar
+            [shape]="'circle'"
+            [imageSrc]="product.image"
+          ></kendo-avatar>
+          <div>
+            <h2>{{product.name}}</h2>
+            <p>{{product.description}} </p>
+            <button> Categories</button>
+          </div>
+
+
+  </div>
+
+</div>
